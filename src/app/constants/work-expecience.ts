@@ -3,9 +3,13 @@ import { WorkExperience } from '../interfaces/WorkExperience';
 export const WORK_EXPERIENCE: WorkExperience[] = [
   {
     title: 'Frontend engineer',
-    date: 'June 2022 - Present',
+    date: 'June 2024 - Present',
     company: 'Seedtag',
-    description: `<p class="mb-2"> - Pending write a description for this job. </p>`
+    description: `
+      <p class="mb-2"> - Spearheaded the development of new features for the "Lizos OS" application using React and Turborepo. </p>
+      <p class="mb-2"> - Implemented a monorepo architecture, resulting in improved code organization and development efficiency. </p>
+      <p class="mb-2"> - Led a significant code decoupling effort, reducing code duplication and enhancing maintainability. </p>
+      <p class="mb-2"> - Developed a new application for public sharing of "Lizos OS" components from the ground up. </p>`,
   },
   {
     title: 'Frontend engineer',
