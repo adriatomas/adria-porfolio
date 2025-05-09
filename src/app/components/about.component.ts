@@ -57,7 +57,11 @@ import { Component } from '@angular/core';
           <a href="#contact" title="Hire Me" class="button stroke smoothscroll"
             >Hire Me</a
           >
-          <a [href]="resumeUrl" title="Download CV" download="adria-tomas-altes-resume" class="button button-primary"
+          <a
+            [href]="resumeUrl"
+            title="Download CV"
+            download="adria-tomas-altes-resume"
+            class="button button-primary"
             >Download CV</a
           >
         </div>
@@ -71,7 +75,10 @@ export class AboutComponent {
     { title: 'Fullname:', value: 'Adrià Tomás' },
     { title: 'Birth: Date', value: 'October 24, 1994' },
     { title: 'Job:', value: 'Senior Frontend Developer' },
-    { title: 'Website:', value: 'https://adriatomas.github.io/adria-porfolio/' },
+    {
+      title: 'Website:',
+      value: 'https://adriatomas.github.io/adria-porfolio/',
+    },
     { title: 'Email:', value: 'adriatomas@hotmail.com' },
   ];
 
@@ -84,5 +91,5 @@ export class AboutComponent {
     { title: 'Jest', value: 80 },
   ];
 
-  public resumeUrl = '/assets/files/resume.pdf'
+  public resumeUrl = '/assets/files/2025-resume.pdf';
 }
