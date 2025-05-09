@@ -91,5 +91,5 @@ export class AboutComponent {
     { title: 'Jest', value: 80 },
   ];
 
-  public resumeUrl = 'assets/files/2025-resume.pdf';
+  public resumeUrl = 'assets/files/2025-resume-compressed.pdf';
 }
