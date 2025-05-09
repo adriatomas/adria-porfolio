@@ -60,7 +60,7 @@ import { Component } from '@angular/core';
           <a
             [href]="resumeUrl"
             title="Download CV"
-            download="adria-tomas-altes-resume"
+            download="adria-tomas-altes-resume.pdf"
             class="button button-primary"
             >Download CV</a
           >
@@ -91,5 +91,5 @@ export class AboutComponent {
     { title: 'Jest', value: 80 },
   ];
 
-  public resumeUrl = '/assets/files/2025-resume.pdf';
+  public resumeUrl = 'assets/files/2025-resume.pdf';
 }
