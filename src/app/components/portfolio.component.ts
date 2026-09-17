@@ -10,7 +10,8 @@ import { Component } from '@angular/core';
           <h1>Check Out Some of My Works.</h1>
 
           <p class="lead">
-            Here are some of my relevant contributions to professional projects.
+            Side projects I have designed, built and shipped end to end over the
+            last few months.
           </p>
         </div>
       </div>
@@ -24,10 +25,10 @@ import { Component } from '@angular/core';
             @for (porfolioItem of porfilioList; track porfolioItem.title) {
             <div class="folio-item min-w-auto max-w-[500px]">
               <div class="item-wrap">
-                <img [src]="porfolioItem.image" alt="Wallapop" />
+                <img [src]="porfolioItem.image" [alt]="porfolioItem.title" />
                 <div class="overlay">
                   <div class="folio-item-table">
-                    <div class="folio-item-cell flex justify-center flex-col items-center h-full">
+                    <div class="folio-item-cell flex justify-center flex-col items-center h-full px-8 text-center">
                       <h3 class="folio-title">{{ porfolioItem.title }}</h3>
                       <span class="folio-types md:mb-8">
                         {{ porfolioItem.description }}
@@ -49,22 +50,28 @@ import { Component } from '@angular/core';
 export class PortfolioComponent {
   porfilioList = [
     {
-      title: 'Wallapop',
-      description: 'Api integration & Front End development',
-      image: 'assets/images/portfolio/wallapop.webp',
-      url: 'https://es.wallapop.com/'
+      title: 'Running Tracker',
+      description: 'Next.js & Supabase · Race plan builder and workout log',
+      image: 'assets/images/portfolio/running-tracker.webp',
+      url: 'https://training-tracker-pied.vercel.app'
     },
     {
-      title: 'Hola Talent',
-      description: 'Api integration & Front End development',
-      image: 'assets/images/portfolio/hola-talent.webp',
-      url: 'https://www.holatalent.com/'
+      title: 'Rumbo',
+      description: 'Next.js, Supabase & MapLibre · Day-by-day trip planner',
+      image: 'assets/images/portfolio/rumbo.webp',
+      url: 'https://rumbo-theta.vercel.app'
     },
     {
-      title: 'WindowSight',
-      description: 'Api integration & Front End development',
-      image: 'assets/images/portfolio/windowsight.webp',
-      url: 'https://windowsight.com/'
+      title: 'La Pizarra del Couch',
+      description: 'Next.js & static rendering · A daily WOD, no database',
+      image: 'assets/images/portfolio/lapizarradelcouch.webp',
+      url: 'https://lapizarradelcouch.vercel.app'
+    },
+    {
+      title: 'BOX',
+      description: 'Next.js & Supabase · WOD email to weekly plan and weights',
+      image: 'assets/images/portfolio/cross-box.webp',
+      url: 'https://cross-box.vercel.app'
     },
   ];
 
