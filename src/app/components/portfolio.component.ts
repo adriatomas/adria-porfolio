@@ -30,10 +30,9 @@ import { Component } from '@angular/core';
                   <div class="folio-item-table">
                     <div class="folio-item-cell flex justify-center flex-col items-center h-full px-8 text-center">
                       <h3 class="folio-title">{{ porfolioItem.title }}</h3>
-                      <span class="folio-types md:mb-8">
-                        {{ porfolioItem.description }}
-                      </span>
-                      <button (click)="visitWebsite(porfolioItem.url)" class="mt-2 bg-transparent text-white border-solid border-[3px] border-white smoothscroll hover:text-[#fed136] hover:border-[#fed136] hover:bg-transparent" >Visit site</button>
+                      <p class="folio-desc">{{ porfolioItem.description }}</p>
+                      <span class="folio-types">{{ porfolioItem.tech }}</span>
+                      <button (click)="visitWebsite(porfolioItem.url)" class="mt-4 bg-transparent text-white border-solid border-[3px] border-white smoothscroll hover:text-[#fed136] hover:border-[#fed136] hover:bg-transparent" >Visit site</button>
                     </div>
                   </div>
                 </div>
@@ -51,25 +50,33 @@ export class PortfolioComponent {
   porfilioList = [
     {
       title: 'Running Tracker',
-      description: 'Next.js & Supabase · Race plan builder and workout log',
+      description:
+        'A 45-week race plan you can actually follow: log every session, compare what you planned against what you ran, and reshape the calendar when life gets in the way.',
+      tech: 'Next.js · TypeScript · Supabase · Recharts',
       image: 'assets/images/portfolio/running-tracker.webp',
       url: 'https://training-tracker-pied.vercel.app'
     },
     {
       title: 'Rumbo',
-      description: 'Next.js, Supabase & MapLibre · Day-by-day trip planner',
+      description:
+        'Trip planning without twenty browser tabs: drop your own points on a map, sort them day by day and add your notes. Built on open map tiles, so no API keys and no per-load billing.',
+      tech: 'Next.js · TypeScript · Supabase · MapLibre GL',
       image: 'assets/images/portfolio/rumbo.webp',
       url: 'https://rumbo-theta.vercel.app'
     },
     {
       title: 'La Pizarra del Couch',
-      description: 'Next.js & static rendering · A daily WOD, no database',
+      description:
+        'The daily workout is never stored, only computed: the date seeds a deterministic generator, so any day past or future always returns the same session. No database, no cron, no cost.',
+      tech: 'Next.js · TypeScript · Static rendering · Vitest',
       image: 'assets/images/portfolio/lapizarradelcouch.webp',
       url: 'https://lapizarradelcouch.vercel.app'
     },
     {
       title: 'BOX',
-      description: 'Next.js & Supabase · WOD email to weekly plan and weights',
+      description:
+        'Turns the gym\'s weekly training email into a structured plan: a 101-movement dictionary recognises each exercise, so your working weight per movement is tracked over time.',
+      tech: 'Next.js · React 19 · TypeScript · Supabase',
       image: 'assets/images/portfolio/cross-box.webp',
       url: 'https://cross-box.vercel.app'
     },

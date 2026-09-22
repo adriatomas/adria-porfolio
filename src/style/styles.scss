@@ -1672,17 +1672,27 @@
  
  #portfolio .folio-title {
    color: #FFFFFF;
-   font-size: 3.3rem;
-   padding: 0 3rem;
+   font-size: 2.8rem;
+   padding: 0;
    margin-bottom: 0;
+   line-height: 1.2;
+ }
+ #portfolio .folio-desc {
+   font-family: "lora-regular", serif;
+   font-size: 1.5rem;
+   line-height: 1.55;
+   color: rgba(255, 255, 255, 0.85);
+   margin: 1rem 0 0;
+   max-width: 40rem;
  }
  #portfolio .folio-types {
    padding: 0;
    text-transform: uppercase;
    font-family: "poppins-regular", sans-serif;
-   font-size: 1.2rem;
+   font-size: 1.1rem;
    letter-spacing: .1rem;
-   color: rgba(255, 255, 255, 0.6);
+   color: rgba(255, 255, 255, 0.55);
+   margin-top: .9rem;
  }
  #portfolio .folio-item:hover .overlay {
    background: rgba(0, 0, 0, 0.8);
@@ -1703,17 +1713,31 @@
   */
  @media only screen and (max-width:1024px) {
    #portfolio .folio-title {
-     font-size: 3.1rem;
+     font-size: 2.6rem;
+   }
+   #portfolio .folio-desc {
+     font-size: 1.4rem;
    }
  }
  @media only screen and (max-width:768px) {
    #portfolio .folio-title {
-     font-size: 2.5rem;
+     font-size: 2.3rem;
+   }
+   #portfolio .folio-desc {
+     font-size: 1.3rem;
+     line-height: 1.45;
+     margin-top: .7rem;
+   }
+   #portfolio .folio-types {
+     display: none;
    }
  }
  @media only screen and (max-width:400px) {
    #portfolio .folio-title {
-     font-size: 2.2rem;
+     font-size: 2rem;
+   }
+   #portfolio .folio-desc {
+     font-size: 1.2rem;
    }
  }
  
