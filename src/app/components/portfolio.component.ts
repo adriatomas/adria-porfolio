@@ -51,7 +51,7 @@ export class PortfolioComponent {
     {
       title: 'Running Tracker',
       description:
-        'A 45-week race plan you can actually follow: log every session, compare what you planned against what you ran, and reshape the calendar when life gets in the way.',
+        'A training-plan manager for race preparation: the whole block from today to the start line, session by session, with every run logged and the plan reshaped when you miss one.',
       tech: 'Next.js · TypeScript · Supabase · Recharts',
       image: 'assets/images/portfolio/running-tracker.webp',
       url: 'https://training-tracker-pied.vercel.app'
@@ -67,7 +67,7 @@ export class PortfolioComponent {
     {
       title: 'La Pizarra del Couch',
       description:
-        'The daily workout is never stored, only computed: the date seeds a deterministic generator, so any day past or future always returns the same session. No database, no cron, no cost.',
+        'A WOD generator for the days you have no idea what to train: open it and the session is already on the board. Computed from the date, so everyone gets the same one.',
       tech: 'Next.js · TypeScript · Static rendering · Vitest',
       image: 'assets/images/portfolio/lapizarradelcouch.webp',
       url: 'https://lapizarradelcouch.vercel.app'
@@ -75,7 +75,7 @@ export class PortfolioComponent {
     {
       title: 'BOX',
       description:
-        'Turns the gym\'s weekly training email into a structured plan: a 101-movement dictionary recognises each exercise, so your working weight per movement is tracked over time.',
+        'A training and load manager for CrossFit athletes: the week\'s WODs in one place, and your working weight per movement tracked session after session.',
       tech: 'Next.js · React 19 · TypeScript · Supabase',
       image: 'assets/images/portfolio/cross-box.webp',
       url: 'https://cross-box.vercel.app'
